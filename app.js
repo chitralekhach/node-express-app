@@ -1,15 +1,15 @@
 const express = require('express')
 const app = express()
 
-const hostname = '127.0.0.1'   // set constants
+const hostname = '0.0.0.0'   // set constants
 const port = 3002
 
-app.get('/', function (req, res) {
-  res.send('Welcome home!')
+app.get('/ab(cd)?e', function (req, res) {
+  res.send('ab(cd)?e')
 })
 
-app.get('/hello', (req, res) => {
-  res.send('Hello World!')
+app.get('/example/a', (req, res) => {
+  res.send('Hello Welcome to Webapps!')
 })
 
 app.get('/big',  (req, res) =>{
